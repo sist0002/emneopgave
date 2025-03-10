@@ -1,3 +1,30 @@
 body {
+  background-color: #7cb3a5;
+}
+h1 {
+  color: #fef9ee;
+}
+.h_lilla {
+  color: #7575b2;
+}
+.h_orange {
+  color: #e5946f;
+}
+section {
   background-color: #fef9ee;
+}
+h1,
+h2 {
+  font-family: "caprasimo";
+}
+p {
+  font-family: "coming_soon";
+}
+@font-face {
+  font-family: "caprasimo";
+  src: url(../fonte/Caprasimo-Regular.ttf);
+}
+@font-face {
+  font-family: "coming_soon";
+  src: url(../fonte/ComingSoon-Regular.ttf);
 }
