@@ -7,6 +7,33 @@
     color: #fef9ee;
   }
 }
+.tilbud {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/baggrund_tilbud.png);
+  h1 {
+    color: #fef9ee;
+  }
+  h2 {
+    color: #e5946f;
+  }
+  .grid_1-4-1 {
+    margin-top: 60em;
+  }
+}
+.miljo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/baggrund_miljo.png);
+  h1 {
+    color: #fef9ee;
+  }
+  .grid_2-1-3 {
+    h1 {
+      color: #5856a0;
+    }
+  }
+}
 /* FONTE */
 h1,
 h2 {
@@ -20,7 +47,7 @@ h2 {
 }
 p {
   font-family: "coming_soon";
-  font-size: 30px;
+  font-size: 25px;
 }
 /* FARVER */
 .lilla {
@@ -45,6 +72,9 @@ p {
   color: #7cb3a5;
 }
 .grid_1-1 {
+  background-color: #fef9ee;
+}
+.miljo_tekst {
   background-color: #fef9ee;
 }
 /* GRID GRAFIK */
@@ -78,7 +108,23 @@ img {
 .grid_1-1-1-1 {
   row-gap: 2em;
   column-gap: 2em;
-  margin: 15.5em;
+  margin-right: 15.5em;
+  margin-left: 15.5em;
+}
+.grid_2-3-2 {
+  margin-right: 15.5em;
+  margin-left: 15.5em;
+}
+.miljo_tekst {
+  margin-top: 60em;
+  margin-right: 20em;
+  margin-left: 20em;
+  padding: 7em;
+}
+.labels {
+  margin-right: 10em;
+  margin-left: 10em;
+  padding-top: 15em;
 }
 /* KNAP */
 .knap {
@@ -91,6 +137,7 @@ img {
   padding-bottom: 1em;
   padding-right: 2em;
   padding-left: 2em;
+  background-color: #fef9ee;
 }
 /* FONT FACE */
 @font-face {
