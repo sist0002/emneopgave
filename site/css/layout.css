@@ -63,3 +63,15 @@
     grid-column: 2 / 3;
   }
 }
+.grid_1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  #box03 {
+    grid-column: 2 / 3;
+  }
+}
+.grid_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0;
+}

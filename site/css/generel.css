@@ -1,9 +1,16 @@
 /* CSS FOR HVER SIDE */
+body {
+  margin: 0;
+  padding: 0;
+}
 .index {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../images/baggrund_forside.png);
   h1 {
+    color: #fef9ee;
+  }
+  .underoverskrift {
     color: #fef9ee;
   }
 }
@@ -20,6 +27,9 @@
   .grid_1-4-1 {
     margin-top: 60em;
   }
+  .underoverskrift {
+    color: #fef9ee;
+  }
 }
 .miljo {
   background-repeat: no-repeat;
@@ -33,6 +43,14 @@
       color: #5856a0;
     }
   }
+  .underoverskrift {
+    color: #fef9ee;
+  }
+}
+.kort {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/baggrund_kort.png);
 }
 /* FONTE */
 h1,
@@ -48,6 +66,10 @@ h2 {
 p {
   font-family: "coming_soon";
   font-size: 25px;
+}
+.underoverskrift {
+  font-family: "coming_soon";
+  font-size: 35px;
 }
 /* FARVER */
 .lilla {
@@ -77,7 +99,17 @@ p {
 .miljo_tekst {
   background-color: #fef9ee;
 }
-/* GRID GRAFIK */
+.grid_1 {
+  color: #e4a0b6;
+  .pink_baggrund {
+    background-color: #e4a0b6;
+    color: #fef9ee;
+  }
+}
+header {
+  background-color: #fef9ee;
+}
+/* GRAFIK */
 .grid_1-4-1 {
   #box01 {
     border-style: solid;
@@ -88,6 +120,10 @@ img {
   max-width: 100%;
 }
 .grid_1-1-1-1 img {
+  border-style: solid;
+  border-width: 7px;
+}
+.grid_1-2 img {
   border-style: solid;
   border-width: 7px;
 }
@@ -126,6 +162,22 @@ img {
   margin-left: 10em;
   padding-top: 15em;
 }
+.grid_1-2 {
+  margin-right: 10em;
+  margin-left: 10em;
+  padding-top: 5em;
+}
+.grid_1 {
+  margin-right: 20em;
+  margin-left: 20em;
+  .pink_baggrund,
+  .hvid_baggrund {
+    padding: 1em;
+  }
+}
+.hvid_baggrund {
+  border-style: solid;
+}
 /* KNAP */
 .knap {
   text-decoration: none;
@@ -138,6 +190,33 @@ img {
   padding-right: 2em;
   padding-left: 2em;
   background-color: #fef9ee;
+}
+/* HEADER */
+.menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  text-decoration: none;
+  flex-direction: row;
+  margin-top: auto;
+  padding: 1em;
+  font-family: "caprasimo";
+  font-size: 30px;
+  a {
+    text-decoration: none;
+  }
+  .forside_link {
+    color: #7cb3a5;
+  }
+  .tilbud_link {
+    color: #e5946f;
+  }
+  .miljo_link {
+    color: #5856a0;
+  }
+  .kort_link {
+    color: #e4a0b6;
+  }
 }
 /* FONT FACE */
 @font-face {
