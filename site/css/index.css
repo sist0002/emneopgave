@@ -1,17 +1,41 @@
 body {
-  background-color: #7cb3a5;
+  background-image: url(../images/baggrund_forside.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 h1 {
   color: #fef9ee;
+  font-size: 90px;
+}
+h2 {
+  font-size: 50px;
 }
 .h_lilla {
-  color: #7575b2;
+  color: #5856a0;
+  .knap {
+    color: #5856a0;
+  }
 }
 .h_orange {
   color: #e5946f;
+  .knap {
+    color: #e5946f;
+  }
 }
-section {
+.pink {
+  color: #e4a0b6;
   background-color: #fef9ee;
+  .knap {
+    color: #e4a0b6;
+  }
+  #box01 {
+    border-style: solid;
+    border-width: 10px;
+  }
+}
+div {
+  background-color: #fef9ee;
+  padding: 2em;
 }
 h1,
 h2 {
@@ -19,6 +43,18 @@ h2 {
 }
 p {
   font-family: "coming_soon";
+  font-size: 30px;
+}
+.knap {
+  text-decoration: none;
+  box-shadow: 4px 4px;
+  border-radius: 45px;
+  font-family: "coming_soon";
+  font-size: 20px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 @font-face {
   font-family: "caprasimo";
