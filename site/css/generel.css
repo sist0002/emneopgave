@@ -1,0 +1,103 @@
+/* CSS FOR HVER SIDE */
+.index {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/baggrund_forside.png);
+  h1 {
+    color: #fef9ee;
+  }
+}
+/* FONTE */
+h1,
+h2 {
+  font-family: "caprasimo";
+}
+h1 {
+  font-size: 90px;
+}
+h2 {
+  font-size: 50px;
+}
+p {
+  font-family: "coming_soon";
+  font-size: 30px;
+}
+/* FARVER */
+.lilla {
+  color: #5856a0;
+  .knap {
+    color: #5856a0;
+  }
+}
+.orange {
+  color: #e5946f;
+  .knap {
+    color: #e5946f;
+  }
+}
+.pink {
+  color: #e4a0b6;
+  .knap {
+    color: #e4a0b6;
+  }
+}
+.green {
+  color: #7cb3a5;
+}
+.grid_1-1 {
+  background-color: #fef9ee;
+}
+/* GRID GRAFIK */
+.grid_1-4-1 {
+  #box01 {
+    border-style: solid;
+    border-width: 10px;
+  }
+}
+img {
+  max-width: 100%;
+}
+.grid_1-1-1-1 img {
+  border-style: solid;
+  border-width: 7px;
+}
+/* MARGIN OG PADDING */
+.grid_1-1 {
+  row-gap: 10em;
+  margin: 10em;
+  margin-top: 60em;
+  padding: 5em;
+}
+.grid_1-4-1 {
+  row-gap: 5em;
+  column-gap: 5em;
+  margin: 15.5em;
+  margin-top: 10em;
+  padding: 5em;
+}
+.grid_1-1-1-1 {
+  row-gap: 2em;
+  column-gap: 2em;
+  margin: 15.5em;
+}
+/* KNAP */
+.knap {
+  text-decoration: none;
+  box-shadow: 4px 4px;
+  border-radius: 45px;
+  font-family: "coming_soon";
+  font-size: 20px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+/* FONT FACE */
+@font-face {
+  font-family: "caprasimo";
+  src: url(../fonte/Caprasimo-Regular.ttf);
+}
+@font-face {
+  font-family: "coming_soon";
+  src: url(../fonte/ComingSoon-Regular.ttf);
+}
