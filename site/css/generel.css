@@ -218,6 +218,22 @@ img {
     color: #e4a0b6;
   }
 }
+/* HOVER EFFECTS */
+.knap.lilla:hover {
+  background-color: #5856a0;
+  color: #fef9ee;
+  box-shadow: none;
+}
+.knap.orange:hover {
+  background-color: #e5946f;
+  color: #fef9ee;
+  box-shadow: none;
+}
+.knap.pink:hover {
+  background-color: #e4a0b6;
+  color: #fef9ee;
+  box-shadow: none;
+}
 /* FONT FACE */
 @font-face {
   font-family: "caprasimo";
