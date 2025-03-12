@@ -6,7 +6,7 @@ body {
 .index {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/baggrund_forside.png);
+  background-image: url(../images/forside.png);
   h1 {
     color: #fef9ee;
   }
@@ -93,7 +93,7 @@ p {
 .green {
   color: #7cb3a5;
 }
-.grid_1-1 {
+.forsidegrid.grid_1-1 {
   background-color: #fef9ee;
 }
 .miljo_tekst {
@@ -128,10 +128,10 @@ img {
   border-width: 7px;
 }
 /* MARGIN OG PADDING */
-.grid_1-1 {
+.forsidegrid.grid_1-1 {
   row-gap: 10em;
   margin: 10em;
-  margin-top: 60em;
+  /* margin-top: 60em; */
   padding: 5em;
 }
 .grid_1-4-1 {
@@ -202,6 +202,10 @@ img {
   padding: 1em;
   font-family: "caprasimo";
   font-size: 30px;
+  nav {
+    position: sticky;
+    top: 0;
+  }
   a {
     text-decoration: none;
   }
