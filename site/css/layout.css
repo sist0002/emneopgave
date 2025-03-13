@@ -43,7 +43,10 @@
   grid-template-columns: 2fr 3fr 2fr;
   #box02 {
     grid-column: 3 / 4;
+    grid-row: 2 / 3;
     margin: 2em;
+    margin-top: 0;
+    text-align: center;
   }
 }
 .grid_2-1-3 {
