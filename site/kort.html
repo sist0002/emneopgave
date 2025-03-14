@@ -6,18 +6,28 @@
     <title>Kort</title>
     <link rel="stylesheet" href="css/generel.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
   </head>
   <body class="kort">
     <header>
       <!-- NAV MENU -->
-      <nav>
-        <ul class="menu">
-          <li><a class="forside_link" href="index.html">FORSIDE</a></li>
-          <li><a class="tilbud_link" href="tilbud.html">TILBUD OG FÆLLLESSKABER</a></li>
-          <li><a class="miljo_link" href="miljo.html">QUEER MILJØET</a></li>
-          <li><a class="kort_link" href="kort.html">KORT</a></li>
-        </ul>
-      </nav>
+      <div class="grid_1-15">
+        <a href="index.html">
+          <img class="logo" src="images/logo.png" alt="logo" />
+        </a>
+        <nav>
+          <ul class="menu">
+            <li><a class="tilbud_link" href="tilbud.html">TILBUD OG FÆLLLESSKABER</a></li>
+            <li><a class="miljo_link" href="miljo.html">QUEER MILJØET</a></li>
+            <li><a class="kort_link" href="kort.html">KORT</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="pink grid_1-2">
@@ -41,6 +51,12 @@
         <p class="pink_baggrund">Tilbud</p>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div>
+        <p>KONTAKT</p>
+        <p>tlf: 12 34 56 78</p>
+        <p>mail: queerfaellesskaber@gmail.dk</p>
+      </div>
+    </footer>
   </body>
 </html>

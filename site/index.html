@@ -6,34 +6,47 @@
     <title>Forside</title>
     <link rel="stylesheet" href="css/generel.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
   </head>
   <body class="index">
     <header>
       <!-- NAV MENU -->
-      <nav>
-        <ul class="menu">
-          <li><a class="forside_link" href="index.html">FORSIDE</a></li>
-          <li><a class="tilbud_link" href="tilbud.html">TILBUD OG FÆLLLESSKABER</a></li>
-          <li><a class="miljo_link" href="miljo.html">QUEER MILJØET</a></li>
-          <li><a class="kort_link" href="kort.html">KORT</a></li>
-        </ul>
-      </nav>
+      <div class="grid_1-15">
+        <a href="index.html">
+          <img class="logo" src="images/logo.png" alt="logo" />
+        </a>
+        <nav>
+          <ul class="menu">
+            <li><a class="tilbud_link" href="tilbud.html">TILBUD OG FÆLLLESSKABER</a></li>
+            <li><a class="miljo_link" href="miljo.html">QUEER MILJØET</a></li>
+            <li><a class="kort_link" href="kort.html">KORT</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="grid_1-3-1">
-        <div id="box01">
-          <a href="">
-            <img src="images/jylland.png" onmouseover="this.src='images/jylland_hover.png';" onmouseout="this.src='images/jylland.png';" />
-          </a>
+      <section class="grid_20">
+        <a id="box01" href="kort.html">
+          <img src="images/jylland.png" onmouseover="this.src='images/jylland_hover.png';" onmouseout="this.src='images/jylland.png';" />
+        </a>
+        <a id="box02" href="kort.html">
           <img src="images/fyn.png" onmouseover="this.src='images/fyn_hover.png';" onmouseout="this.src='images/fyn.png';" />
+        </a>
+        <a id="box03" href="kort.html">
           <img src="images/sjaelland.png" onmouseover="this.src='images/sjaelland_hover.png';" onmouseout="this.src='images/sjaelland.png';" />
-        </div>
+        </a>
       </section>
       <!-- GRID MED ILLUSTRATIONER -->
       <section class="grid_1-1 grid forsidegrid">
         <div id="box01" class="lilla">
-          <h2>HVORFOR QUEER FÆLLESSKABER?</h2>
+          <h2>HVORFOR ER QUEER-MILJØET VIGTIGT?</h2>
           <p>Det danske samfund er desværre stadig meget heteronormativt og det kan derfor være ensomt og overvældende at finde ud af at man er queer.</p>
+          <p>For at styrke sammenhold og trvisel i queer-miljøet, er der derfor her på siden samlet allle queer tilbud og fællesskaber på tværs af landet:) Velkommen til<3</p>
           <a class="knap lilla" href="miljo.html#faellesskaber">Læs mere her</a>
         </div>
         <div id="box02">
@@ -53,9 +66,15 @@
         <img id="box01" src="images/illustration_3.png" alt="AURA" />
         <img id="box02" src="images/pil_left.png" alt="pil til venstre" />
         <img id="box03" src="images/pil_right.png" alt="pil til højre" />
-        <a id="box04" class="knap pink" href="tilbud.html">Se alle tilbud</a>
+        <a id="box04" class="knap pink" href="tilbud.html#tilbudgrid">Se alle tilbud</a>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div>
+        <p>KONTAKT</p>
+        <p>tlf: 12 34 56 78</p>
+        <p>mail: queerfaellesskaber@gmail.dk</p>
+      </div>
+    </footer>
   </body>
 </html>
