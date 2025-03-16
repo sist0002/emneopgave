@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  /* min-height: large; */
 }
 /* CSS FOR HVER SIDE */
 .index {
@@ -30,9 +31,29 @@ body {
   }
 }
 .tilbud {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../images/tilbud.png);
+  background-color: #fef9ee;
+  .tilbudtop {
+    position: relative;
+    text-align: center;
+    h1 {
+      position: absolute;
+      top: 8px;
+      right: 200px;
+    }
+    .underoverskrift {
+      position: absolute;
+      top: 140px;
+      right: 100px;
+    }
+  }
+  .tilbudfooter {
+    position: relative;
+    div {
+      position: absolute;
+      top: 8px;
+      left: 50px;
+    }
+  }
   h1 {
     color: #fef9ee;
   }
@@ -54,9 +75,38 @@ body {
   }
 }
 .miljo {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../images/miljo.png);
+  background-color: #fef9ee;
+  .miljotop {
+    position: relative;
+    h1 {
+      position: absolute;
+      top: 100px;
+      left: 50px;
+    }
+    .underoverskrift {
+      position: absolute;
+      top: 220px;
+      left: 300px;
+    }
+  }
+  .miljofooter {
+    position: relative;
+    div {
+      position: absolute;
+      top: 8px;
+      left: 50px;
+    }
+  }
+  h1 {
+    position: absolute;
+    top: 8px;
+    right: 200px;
+  }
+  .underoverskrift {
+    position: absolute;
+    top: 140px;
+    right: 100px;
+  }
   h1 {
     color: #fef9ee;
   }
@@ -77,14 +127,20 @@ body {
   }
 }
 .kort {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../images/baggrund_kort.png);
+  background-color: #fef9ee;
   .menu {
     .kort_link {
       background-color: #e4a0b6;
       color: #fef9ee;
       padding: 1em;
+    }
+  }
+  .kortfooter {
+    position: relative;
+    div {
+      position: absolute;
+      top: 8px;
+      left: 50px;
     }
   }
 }
@@ -106,6 +162,12 @@ p {
 .underoverskrift {
   font-family: "coming_soon";
   font-size: 35px;
+}
+.labelsektion {
+  div {
+    font-family: "caprasimo";
+    font-size: 90px;
+  }
 }
 /* FARVER */
 .lilla {
@@ -193,10 +255,15 @@ img {
   margin-left: 15.5em;
 }
 .miljo_tekst {
-  margin-top: 60em;
   margin-right: 20em;
   margin-left: 20em;
   padding: 7em;
+}
+@media (width<=1200px) {
+  .miljo_tekst {
+    margin-right: 10em;
+    margin-left: 10em;
+  }
 }
 .labels {
   margin-right: 10em;
@@ -214,6 +281,12 @@ img {
   .pink_baggrund,
   .hvid_baggrund {
     padding: 1em;
+  }
+}
+@media (width<=1200px) {
+  .grid_1 {
+    margin-right: 10em;
+    margin-left: 10em;
   }
 }
 .hvid_baggrund {
@@ -258,6 +331,51 @@ img {
     color: #e4a0b6;
   }
 }
+@media (width<=1200px) {
+  .menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    text-decoration: none;
+    flex-direction: column;
+  }
+  .logo {
+    max-width: 100px;
+    max-height: 50px;
+  }
+  .tilbud.tilbud_link {
+    background-color: none;
+    padding: 0;
+  }
+  .tilbud {
+    .menu {
+      .tilbud_link {
+        background-color: transparent;
+        color: #e5946f;
+        padding: none;
+      }
+    }
+  }
+  .miljo {
+    .menu {
+      .miljo_link {
+        background-color: transparent;
+        color: #7575b2;
+        padding: none;
+      }
+    }
+  }
+  .kort {
+    .menu {
+      .kort_link {
+        background-color: transparent;
+        color: #e4a0b6;
+        padding: none;
+        margin: 0;
+      }
+    }
+  }
+}
 .logo {
   max-width: 100%;
   padding: 1em;
@@ -269,13 +387,17 @@ img {
 }
 /* FOOTER */
 footer {
-  margin-top: 30em;
+  margin-top: 0;
   margin-bottom: 2em;
   p {
     color: #fef9ee;
   }
   div {
     margin: 10em;
+  }
+  img {
+    margin: 0;
+    padding: 0;
   }
 }
 /* HOVER EFFECTS */
