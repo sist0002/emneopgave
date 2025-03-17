@@ -22,9 +22,10 @@ body {
     }
   }
   .hovedsektion {
-    background-image: url(../images/forsidebg.png);
+    background-image: url(../images/forsidebg.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #fef9ee;
   }
   .grid_1-4-1 {
     background-color: #fef9ee;
